@@ -9,83 +9,68 @@
             font-family: Georgia, serif; /* Vintage typeface */
             margin: 0;
             padding: 0;
-            background-color: #B56576;
-            color: #FF8FB3;
+            background-color: #CEE5F2; /* Lightest blue */
+            color: #482728; /* Darkest brown */
         }
+
         header {
-            background-color: #6D597A; 
-            color: #4A001F;
+            background-color: #B287A3; /* Middle blue */
+            color: #CEE5F2; /* Lightest blue */
             padding: 20px;
             text-align: center;
         }
 
         #top-header h1, #top-header h2 {
-            color: #FFF; /* White color for header text at the top */
+            color: #CEE5F2; /* Lightest blue */
             margin: 10px 0;
         }
+
         h1, h2 {
             margin: 10px 0;
-            color: #FF4682;
+            color: #7E4E60; /* Middle pink */
         }
-        section {
+
+        section.left-section {
+            float: left;
+            width: 50%;
             padding: 20px;
-            margin: 20px auto;
-            max-width: 800px;
-            background-color: #E56B6F;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-sizing: border-box;
+            background-color: #7E4E60; /* Middle pink */
+            color: #CEE5F2; /* Lightest blue */
         }
-        .portfolio, .projects {
-            margin-top: 30px;
+
+        section.right-section {
+            float: right;
+            width: 50%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #B287A3; /* Middle blue */
+            color: #482728; /* Darkest brown */
         }
-        .project {
-            margin-bottom: 20px;
-        }
+
         footer {
-            background-color: #FF8FB3;
-            color: #E0F2E9;
+            background-color: #482728; /* Darkest brown */
+            color: #CEE5F2; /* Lightest blue */
             padding: 10px;
             text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            clear: both;
         }
     </style>
 </head>
 <body>
     <header id="top-header">
         <h1>Rachel Divinagracia</h1>
-        <h2> M.S.E & B.S.E Industrial Engineering | Process Engineering Specialist</h2>
+        <h2>M.S.E & B.S.E Industrial Engineering | Process Engineering Specialist</h2>
     </header>
 
-    <section id="about">
-    <h2>About Me</h2>
-    <p>Insert a brief introduction about yourself here.</p>
-    <p>Resume:</p>
-    <iframe src="https://drive.google.com/file/d/1Azjhxk4ZeIZIY8NYbPH3ed3bEk2w6ASr/view?usp=drive_link" style="width:100%;height:300px;border:none;"></iframe>
+    <section class="left-section">
+        <h2>About Me</h2>
+        <p>Insert a brief introduction about yourself here.</p>
+        <p>Resume:</p>
+        <iframe src="https://drive.google.com/file/d/1Azjhxk4ZeIZIY8NYbPH3ed3bEk2w6ASr/view?usp=drive_link" style="width:100%;height:300px;border:none;"></iframe>
     </section>
 
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <!-- Embed GitHub and Python files here -->
-        <!-- Example: <iframe src="https://github.com/user/repo" style="width:100%;height:300px;border:none;"></iframe> -->
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <!-- Add project descriptions here -->
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Description of project 1.</p>
-        </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of project 2.</p>
-        </div>
-        <!-- Add more projects as needed -->
-    </section>
-
-    <section id="contact">
+    <section class="right-section">
         <h2>Contact Information</h2>
         <p>Email: rdivinag333@gmail.com</p>
         <p>Phone: (734)-273-9095</p>
